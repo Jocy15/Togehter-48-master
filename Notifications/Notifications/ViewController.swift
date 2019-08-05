@@ -1,9 +1,9 @@
 //
-//  Notifications.swift
-//  Togehter 48
+//  ViewController.swift
+//  Notifications
 //
-//  Created by SER-YCL8 on 7/31/19.
-//  Copyright © 2019 SER-YCL8. All rights reserved.
+//  Created by Central States SER 02 on 8/5/19.
+//  Copyright © 2019 Central States SER 02. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Do any additional setup after loading the view.
         let center = UNUserNotificationCenter.current()
         
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
@@ -43,9 +43,7 @@ class ViewController: UIViewController {
             //Check the error parameter and handle any error
         }
     }
-    
-    
+
+
 }
-
-
 
